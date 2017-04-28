@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { GeneratedComponentComponent } from './generated-component/generated-component.component';
+import { BooksModule } from "app/books/books.module";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GeneratedComponentComponent } from './generated-component/generated-com
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    BooksModule
   ],
   providers: [],
   bootstrap: [AppComponent]

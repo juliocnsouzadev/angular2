@@ -12,4 +12,5 @@ export class GeneratedComponentComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }
