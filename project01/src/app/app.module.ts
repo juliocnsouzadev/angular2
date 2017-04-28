@@ -4,13 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { GeneratedComponentComponent } from './generated-component/generated-component.component';
 import { BooksModule } from "app/books/books.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    GeneratedComponentComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

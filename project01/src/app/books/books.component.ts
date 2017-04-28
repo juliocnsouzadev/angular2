@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksComponent implements OnInit {
 
-  constructor() { }
+  bookType: string;
+  books: string[];
+
+
+  constructor() {
+    this.bookType = "Java";
+    this.books = ['CDI', 'EJB', 'Spring', 'Reflection', 'OCA', 'OCJP', 'JSF', 'Servlets & JSP'];
+   }
 
   ngOnInit() {
   }
