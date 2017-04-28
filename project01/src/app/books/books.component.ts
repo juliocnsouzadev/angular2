@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BooksService } from "app/books/books.service";
 
 @Component({
   selector: 'app-books',
@@ -10,10 +11,9 @@ export class BooksComponent implements OnInit {
   bookType: string;
   books: string[];
 
-
-  constructor() {
+  constructor(private service: BooksService) {
     this.bookType = "Java";
-    this.books = ['CDI', 'EJB', 'Spring', 'Reflection', 'OCA', 'OCJP', 'JSF', 'Servlets & JSP'];
+    this.books = this.service.getBooks();
    }
 
   ngOnInit() {
